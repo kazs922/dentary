@@ -1,0 +1,66 @@
+/* 초기화 */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* 전체 중앙 정렬 (수직 + 수평) */
+.login-container {
+  display: flex;
+  justify-content: center;   /* 수평 중앙 */
+  align-items: center;       /* 수직 중앙 */
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f6f8;
+}
+
+/* login 박스 구조는 유지 */
+.login-box {
+  display: flex;
+  flex-direction: row;       /* 좌우 구조 유지 */
+  align-items: center;
+  gap: 24px;
+  background-color: white;
+  padding: 32px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* 로고 */
+.logo {
+  width: 120px;
+}
+
+/* 폼 */
+/* login-form 자체에 고정 너비 부여 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 240px;          /* 💡 핵심: form 자체가 240px로 고정 */
+}
+
+/* 입력창 */
+.login-form input {
+  padding: 10px;
+  width: 100%;           /* form 너비에 맞춤 */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 버튼도 form 너비에 맞춤 */
+.login-form button {
+  padding: 10px;
+  width: 109%;           /* 💡 버튼도 form 너비에 맞춤 */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.login-form button:hover {
+  background-color: #0056b3;
+}

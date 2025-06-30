@@ -1,0 +1,131 @@
+.dashboard-fullscreen {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;            /* ✅ 전체 너비 */
+  height: 100vh;           /* ✅ 전체 높이 */
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.dashboard-left {
+  flex: 0 0 280px;
+  background-color: white;
+  padding: 24px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;       /* ✅ 왼쪽도 높이 고정 */
+}
+
+.dashboard-right {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  height: 100vh;           /* ✅ 오른쪽도 전체 높이 */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-table {
+  width: 100%;             /* ✅ 표 너비가 부모에 맞게 */
+}
+
+
+.user-profile-icon {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-item label {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.form-item input {
+  padding: 6px 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.save-button {
+  padding: 8px;
+  margin-top: 10px;
+  border: none;
+  background-color: #555;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dashboard-logo {
+  width: 90%;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+/* 오른쪽 테이블 영역 */
+.dashboard-right {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+/* 필터 탭 영역 */
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  margin-bottom: 16px;
+}
+
+.tab {
+  background-color: #ccc;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #666;
+  color: white;
+}
+
+/* 테이블 스타일 */
+.dashboard-table {
+  width: 100%;
+  max-width: none;
+  table-layout: auto;
+  font-size: 16px;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.view-button {
+  padding: 4px 8px;
+  border: 1px solid #aaa;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
